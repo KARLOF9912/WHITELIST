@@ -1,0 +1,11 @@
+userkey = "https://pastebin.com/raw/hv50nuyZ"
+blacklist = "https://pastebin.com/raw/B4CF2Rg1"
+key = game:HttpGet(userkey, true)
+banned = game:HttpGet(blacklist, true)
+plr = game.Players.LocalPlayer
+
+if string.find(key,_G.Key) then --print("Whitelist Successfully")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KARLOF9912/N0NHUB/main/Exeos',true))()
+else
+plr:kick("BRUH TRY AGAIN!!")
+end
